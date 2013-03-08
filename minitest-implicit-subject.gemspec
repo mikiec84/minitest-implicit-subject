@@ -1,11 +1,12 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'minitest/implicit/subject/version'
+
+VERSION = '0.0.1'
 
 Gem::Specification.new do |spec|
   spec.name          = "minitest-implicit-subject"
-  spec.version       = Minitest::Implicit::Subject::VERSION
+  spec.version       = VERSION
   spec.authors       = ["Anton Lindqvist"]
   spec.email         = ["anton@qvister.se"]
   spec.description   = %q{TODO: Write a gem description}
