@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.version       = VERSION
   spec.authors       = ['Anton Lindqvist']
   spec.email         = ['anton@qvister.se']
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ''
+  spec.description   = 'Implicit declaration of the test subject.'
+  spec.summary       = 'Implicitly define the test subject as any non string argument pass to a describe block.'
+  spec.homepage      = 'http://github.com/mptre/minitest-Implicit-subject'
   spec.license       = 'MIT'
 
   spec.files         = Dir['lib/**/*.rb']
