@@ -32,6 +32,12 @@ describe Object do
     subject.must_equal BasicObject
   end
 end
+
+describe 'Object' do
+  it 'does not turn a string into a subject' do
+    respond_to?(:subject).must_equal false
+  end
+end
 ```
 
 ## Contributing
