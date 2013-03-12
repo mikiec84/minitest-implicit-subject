@@ -1,6 +1,6 @@
-# Minitest::Implicit::Subject
+# MiniTest implicit subject
 
-TODO: Write a gem description
+Implicitly define the test subject as any non string argument pass to a describe block.
 
 ## Installation
 
@@ -17,8 +17,6 @@ Or install it yourself as:
     $ gem install minitest-implicit-subject
 
 ## Usage
-
-TODO: Write usage instructions here
 
 ## Contributing
 
