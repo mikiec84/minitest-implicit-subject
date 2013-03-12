@@ -1,4 +1,4 @@
-# MiniTest implicit subject
+# Minitest implicit subject
 
 Implicitly define the test subject as any non string argument pass to a describe block.
 
@@ -17,6 +17,22 @@ Or install it yourself as:
     $ gem install minitest-implicit-subject
 
 ## Usage
+
+```ruby
+describe Object do
+  it 'defines the subject implicitly' do
+    subject.must_equal Object
+  end
+end
+
+describe Object do
+  subject { BasicObject }
+
+  it 'does not overwrite a existing subject' do
+    subject.must_equal BasicObject
+  end
+end
+```
 
 ## Contributing
 
