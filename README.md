@@ -1,6 +1,6 @@
 # Minitest implicit subject
 
-Implicitly define the test subject as any non string argument pass to a describe block.
+Implicitly define the test subject as any non string argument pass to a describe block. This behavior is borrowed from RSpec.
 
 ## Installation
 
