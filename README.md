@@ -38,6 +38,16 @@ describe 'Object' do
     respond_to?(:subject).must_equal false
   end
 end
+
+describe 'Singleton' do
+  klass = Class.new do
+    include Singleton
+  end
+
+  it 'defines the singleton instance as the subject' do
+    subject.must_equal klass.instance
+  end
+end
 ```
 
 ## Contributing
