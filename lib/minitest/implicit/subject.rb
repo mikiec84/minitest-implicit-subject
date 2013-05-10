@@ -1,4 +1,5 @@
 require 'minitest/spec'
+require 'singleton'
 
 module Kernel
   alias_method :alias_describe, :describe
@@ -8,6 +9,8 @@ module Kernel
     subject = args.first
 
     if !subject.is_a?(String) && !cls.instance_methods.include?(:subject)
+      subject = subject.instance if subject.included_modules.include?(Singleton)
+
       cls.subject { subject }
     end
 

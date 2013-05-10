@@ -21,3 +21,15 @@ describe 'missing subject' do
     respond_to?(:subject).must_equal false
   end
 end
+
+describe 'singleton subject' do
+  klass = Class.new do
+    include Singleton
+  end
+
+  describe klass do
+    it 'defines the singleton instance as the subject' do
+      subject.must_equal klass.instance
+    end
+  end
+end
