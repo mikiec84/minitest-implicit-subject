@@ -26,10 +26,17 @@ describe 'singleton subject' do
   klass = Class.new do
     include Singleton
   end
+  struct = OpenStruct.new
 
   describe klass do
     it 'defines the singleton instance as the subject' do
       subject.must_equal klass.instance
+    end
+  end
+
+  describe struct do
+    it 'does not blow up if the given subject has no included modules' do
+      subject.must_equal struct
     end
   end
 end
