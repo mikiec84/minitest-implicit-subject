@@ -40,12 +40,14 @@ describe 'Object' do
 end
 
 describe 'Singleton' do
-  klass = Class.new do
+  Klass = Class.new do
     include Singleton
   end
 
-  it 'defines the singleton instance as the subject' do
-    subject.must_equal klass.instance
+  describe Klass do
+    it 'defines the singleton instance as the subject' do
+      subject.must_equal Klass.instance
+    end
   end
 end
 ```
