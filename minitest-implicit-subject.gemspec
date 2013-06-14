@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = Dir['spec/**/*_spec.rb']
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'minitest', '~> 4.7.0'
+  spec.add_dependency 'minitest', '~> 5.0.0'
 
   spec.add_development_dependency 'awesome_print'
   spec.add_development_dependency 'bundler', '~> 1.3'
