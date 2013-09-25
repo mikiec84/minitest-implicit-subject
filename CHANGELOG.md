@@ -1,3 +1,7 @@
+## v1.3.0 (2012-09-25)
+
+* Simplified inclusion of the gem. (jsanders)
+
 ## v1.2.0 (2012-06-14)
 
 * Upgraded Minitest.
