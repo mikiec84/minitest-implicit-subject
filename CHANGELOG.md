@@ -1,3 +1,7 @@
+## v1.4.0 (2012-09-25)
+
+* Removed Minitest version dependency constraint. (mptre)
+
 ## v1.3.0 (2012-09-25)
 
 * Simplified inclusion of the gem. (jsanders)

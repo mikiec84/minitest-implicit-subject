@@ -2,7 +2,7 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-VERSION = '1.3.0'
+VERSION = '1.4.0'
 
 Gem::Specification.new do |spec|
   spec.name          = 'minitest-implicit-subject'
