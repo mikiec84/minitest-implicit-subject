@@ -6,15 +6,21 @@ Implicitly define the test subject as any non string argument pass to a describe
 
 Add this line to your application's Gemfile:
 
-    gem 'minitest-implicit-subject'
+```ruby
+gem 'minitest-implicit-subject'
+```
 
 And then execute:
 
-    $ bundle
+```bash
+$ bundle
+```
 
 Or install it yourself as:
 
-    $ gem install minitest-implicit-subject
+```bash
+$ gem install minitest-implicit-subject
+```
 
 ## Usage
 
@@ -57,10 +63,10 @@ describe 'Singleton' do
 end
 ```
 
-## Contributing
+## Development
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+Run test suite:
+
+```bash
+bundle exec rake
+```
