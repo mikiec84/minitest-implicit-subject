@@ -4,6 +4,8 @@ require 'singleton'
 module Kernel
   alias_method :alias_describe, :describe
 
+  private
+
   def describe(*args, &block)
     cls = alias_describe(*args, &block)
     subject = args.first
