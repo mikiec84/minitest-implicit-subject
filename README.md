@@ -18,14 +18,12 @@ Or install it yourself as:
 
 ## Usage
 
-If you're not using `Bundler.require` make sure to require the gem. Notice
+If you're not using `Bundler.require` then make sure to require the gem. Notice
 this is **not** necessary while using Ruby on Rails.
 
 ```ruby
 require 'minitest-implicit-subject'
-```
 
-```ruby
 describe Object do
   it 'defines the subject implicitly' do
     subject.must_equal Object
