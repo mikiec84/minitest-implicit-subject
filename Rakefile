@@ -8,3 +8,5 @@ Rake::TestTask.new do |t|
   t.ruby_opts = ['-r spec_helper']
   t.verbose = true
 end
+
+task default: :spec
