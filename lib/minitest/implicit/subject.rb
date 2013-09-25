@@ -11,7 +11,7 @@ module Kernel
     subject = args.first
 
     if !subject.is_a?(String) && !cls.instance_methods.include?(:subject)
-      if subject.respond_to?(:included_modules) && Array === subject.included_modules && subject.included_modules.include?(Singleton)
+      if subject.respond_to?(:included_modules) && Array(subject.included_modules).include?(Singleton)
         subject = subject.instance
       end
 
